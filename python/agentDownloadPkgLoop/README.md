@@ -15,8 +15,6 @@ pip3 install -r requirements.txt
 ## Steps to execute the example
 ```
 python3 main.py
-<<<<<<< HEAD
-=======
 ```
 Upon execution of the above command a selection menu appears on the terminal
 
@@ -110,5 +108,4 @@ Download attempt -  7
 Download attempt -  8
 Download attempt -  9
 Download attempt -  10
->>>>>>> 6c99b40 (added files)
 ```

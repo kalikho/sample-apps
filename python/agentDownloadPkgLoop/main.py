@@ -7,10 +7,15 @@ import calendar
 import time
 import os
 <<<<<<< HEAD
+<<<<<<< HEAD
 import string
 import random
 =======
 >>>>>>> 6c99b40 (added files)
+=======
+import string
+import random
+>>>>>>> 54f8808 (removed user inputs)
 
 
 addr = 'localhost:4040'  # update the server and port accordingly, addr corresponds to an agent
@@ -46,11 +51,16 @@ def registerIdentity(identity_name):
         print("Timestamp : ", param2)
         print(" ")
 <<<<<<< HEAD
+<<<<<<< HEAD
         print("Switch to the App, approve identity, and set artifacts")
     return param1
 =======
         print("Switch to the App and approve identity")
 >>>>>>> 6c99b40 (added files)
+=======
+        print("Switch to the App, approve identity, and set artifacts")
+    return param1
+>>>>>>> 54f8808 (removed user inputs)
 
 
 def downloadpkg(identity,storagePath):
@@ -61,6 +71,7 @@ def downloadpkg(identity,storagePath):
         if not os.path.exists(param2):
             os.makedirs(param2)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         while(1):
             counter = counter + 1
@@ -73,12 +84,22 @@ def downloadpkg(identity,storagePath):
                 print("error: ",e.details)
 =======
         print("==== downloading ====")
+=======
+>>>>>>> 54f8808 (removed user inputs)
         while(1):
             counter = counter + 1
-            print("Download attempt - ",counter)
             ireq = edgeagent_pb2.DownloadFilesReq(identity=param1,path=param2)
+<<<<<<< HEAD
             req = stub.DownloadFiles(ireq)
 >>>>>>> 6c99b40 (added files)
+=======
+            try:
+                req = stub.DownloadFiles(ireq)
+                print("==== downloading ====")
+                print("Download attempt - ",counter)
+            except Exception as e:
+                print("error: ",e.details)
+>>>>>>> 54f8808 (removed user inputs)
             time.sleep(3)
     except grpc.RpcError as e:
         print(f'failed setting: {e.details}')
@@ -88,12 +109,16 @@ def downloadpkg(identity,storagePath):
 
 if __name__ == '__main__':
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 54f8808 (removed user inputs)
         N = 7
         identityname = ''.join(random.choices(string.ascii_uppercase +
                              string.digits, k=N))
         identity = registerIdentity(identityname)
         storagePath = "downloads/"+identity
         downloadpkg(identity,storagePath)
+<<<<<<< HEAD
 =======
     while(1):
         print(" ")
@@ -114,3 +139,5 @@ if __name__ == '__main__':
         if choice == "3":
             exit()
 >>>>>>> 6c99b40 (added files)
+=======
+>>>>>>> 54f8808 (removed user inputs)

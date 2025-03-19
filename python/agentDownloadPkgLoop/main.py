@@ -83,6 +83,7 @@ def downloadpkg(identity,storagePath):
             except Exception as e:
                 print("error: ",e.details)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         print("==== downloading ====")
 =======
@@ -105,6 +106,9 @@ def downloadpkg(identity,storagePath):
 =======
             time.sleep(1)
 >>>>>>> 68ff609 (updated sleep to 1 sec)
+=======
+            time.sleep(1)
+>>>>>>> 1f1814f8bdf280141b366537847b54b7ad4f9b58
     except grpc.RpcError as e:
         print(f'failed setting: {e.details}')
     else:

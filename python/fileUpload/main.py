@@ -5,6 +5,8 @@ import compiled_protos.auth_pb2
 import compiled_protos.auth_pb2_grpc
 import compiled_protos.platformapiv2_pb2
 import compiled_protos.platformapiv2_pb2_grpc
+import compiled_protos.did_pb2
+import compiled_protos.did_pb2_grpc
 import os
 import configparser
 
@@ -75,6 +77,21 @@ def Login():
         print("login successful")
         return res.token
 
+#get all approved agents
+def GetApprovedAgents():
+    print("== fetching all approved agents ==")
+    status = compiled_protos.did_pb2.DIDStatus.Approved
+    try:
+        ireq = compiled_protos.platformapiv2_pb2.GetAgentsListReq(
+            # agentStatus= status
+        )
+        stream = pfv2_stub.GetAgentsList(ireq,metadata=creds,timeout=100)
+        print("ok")
+        for response in stream:
+            print("approved agent: ",response)
+
+    except grpc.RpcError as e:
+        logging.error("gRPC error: %s", e)
 #configure persistance and autoDir
 def SetAgentConfig(persistance,autoDir,creds):
     print(" ")
@@ -143,6 +160,10 @@ if __name__ == '__main__':
         res = SetAgentConfig(persist_on,autoDir_on,creds)
         if res == False:
             exit()
+        
+        #get list of approved agents
+        print("== list of approved agents ==")
+        GetApprovedAgents()
         #Iterate over each file in the dir and upload
         files=list_files_in_directory(dirpath)
         print(" ")

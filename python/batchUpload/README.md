@@ -21,24 +21,77 @@ python3 main.py
 ```
 == Login ==
  
-user:  mrx@fexbox.org
+user:  roshan@scurid.com
 login successful
  
-== setting persistence and autodir ==
+== fetching all approved agents ==
+ 
+== found 188 registered agents ==
+ 
+== setting persistence and autodir for agent did:scurid:0x001e7280470663c88619fD3c77c74FD72F58F784==
  
 persistence is set to True
 autoDir is set to True
  
-== file upload starts ==
+== file upload starts for agent did:scurid:0x001e7280470663c88619fD3c77c74FD72F58F784 ==
  
  uploading file: file2.txt, at location: datastore/file2.txt
  file:  file2.txt, is successfully uploaded
  
+== upload completed for agent did:scurid:0x001e7280470663c88619fD3c77c74FD72F58F784 ==
+ 
  uploading file: file1.txt, at location: datastore/file1.txt
  file:  file1.txt, is successfully uploaded
+ 
+== upload completed for agent did:scurid:0x001e7280470663c88619fD3c77c74FD72F58F784 ==
  
  uploading file: sample.txt, at location: datastore/sample.txt
  file:  sample.txt, is successfully uploaded
  
-== upload complete ==
+== upload completed for agent did:scurid:0x001e7280470663c88619fD3c77c74FD72F58F784 ==
+ 
+== setting persistence and autodir for agent did:scurid:0x00DC62c73F094998F532D040189C230557de8331==
+ 
+persistence is set to True
+autoDir is set to True
+ 
+== file upload starts for agent did:scurid:0x00DC62c73F094998F532D040189C230557de8331 ==
+ 
+ uploading file: file2.txt, at location: datastore/file2.txt
+ file:  file2.txt, is successfully uploaded
+ 
+== upload completed for agent did:scurid:0x00DC62c73F094998F532D040189C230557de8331 ==
+ 
+ uploading file: file1.txt, at location: datastore/file1.txt
+ file:  file1.txt, is successfully uploaded
+ 
+== upload completed for agent did:scurid:0x00DC62c73F094998F532D040189C230557de8331 ==
+ 
+ uploading file: sample.txt, at location: datastore/sample.txt
+ file:  sample.txt, is successfully uploaded
+ 
+== upload completed for agent did:scurid:0x00DC62c73F094998F532D040189C230557de8331 ==
+ 
+== setting persistence and autodir for agent did:scurid:0x0405e7945ad53431bF7C7Cc9b39c203b2054dE16==
+ 
+persistence is set to True
+autoDir is set to True
+ 
+== file upload starts for agent did:scurid:0x0405e7945ad53431bF7C7Cc9b39c203b2054dE16 ==
+ 
+ uploading file: file2.txt, at location: datastore/file2.txt
+ file:  file2.txt, is successfully uploaded
+ 
+== upload completed for agent did:scurid:0x0405e7945ad53431bF7C7Cc9b39c203b2054dE16 ==
+ 
+ uploading file: file1.txt, at location: datastore/file1.txt
+ file:  file1.txt, is successfully uploaded
+ 
+== upload completed for agent did:scurid:0x0405e7945ad53431bF7C7Cc9b39c203b2054dE16 ==
+ 
+ uploading file: sample.txt, at location: datastore/sample.txt
+ file:  sample.txt, is successfully uploaded
+ 
+== upload completed for agent did:scurid:0x0405e7945ad53431bF7C7Cc9b39c203b2054dE16 ==
+
 ```

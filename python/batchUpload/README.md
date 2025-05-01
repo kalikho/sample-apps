@@ -1,4 +1,4 @@
-# Python App: Upload Files
+# Python App: Batch Upload
 This folder contains a sample app for uploading contents to the Scurid server
 
 ## Dependency installation
